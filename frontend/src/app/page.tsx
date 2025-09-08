@@ -12,6 +12,7 @@ import {
   ArrowRight,
   Sparkles
 } from 'lucide-react';
+import Navbar from '@/components/Navbar';
 
 export default function HomePage() {
   const [mounted, setMounted] = useState(false);
@@ -24,8 +25,10 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+      <Navbar />
+      
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden pt-16">
         <div className="absolute inset-0 bg-gradient-to-r from-green-600/10 to-emerald-600/10" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
           <motion.div
